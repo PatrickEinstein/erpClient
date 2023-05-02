@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <Main></Main>,
   },
   {
-    path: "/main",
+    path: "/",
     element: <Main2/>,
   },
   {
@@ -34,10 +34,10 @@ const router = createBrowserRouter([
     path: "/summary",
     element: <Breakdown />,
   },
-  {
-    path: "/",
-    element: <Dashboard />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Dashboard />,
+  // },
   {
     path: "/admin/profile",
     element: <ProfilePage />,

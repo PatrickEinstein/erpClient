@@ -53,11 +53,11 @@ export default function ProfileCard({
   return (
     <Card>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            {firstName[0]}
-          </Avatar>
-        }
+        // avatar={
+        //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+        //     {firstName[0]}
+        //   </Avatar>
+        // }
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
