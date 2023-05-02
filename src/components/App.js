@@ -9,8 +9,9 @@ import { Success } from "./pages/success";
 import { Main2 } from "./pages/Main2";
 import { Breakdown } from "./pages/breakdown";
 import { Recommends1 } from "./recommendations/recommendation";
-import{ Dashboard} from "../Admin/index";
+import { Dashboard } from "../Admin/index";
 import ProfilePage from "../Admin/components/Profilepage";
+import {GoToAdmin }from "./AdminLink/adminlink";
 //import Dashboard from "../Admin/index"
 /** react routes */
 const router = createBrowserRouter([
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <Main2/>,
+    element: <Main2 />,
   },
   {
     path: "/quiz",
@@ -34,10 +35,10 @@ const router = createBrowserRouter([
     path: "/summary",
     element: <Breakdown />,
   },
-  // {
-  //   path: "/",
-  //   element: <Dashboard />,
-  // },
+  {
+    path: "/erp_myAdmin",
+    element: <GoToAdmin />,
+  },
   {
     path: "/admin/profile",
     element: <ProfilePage />,

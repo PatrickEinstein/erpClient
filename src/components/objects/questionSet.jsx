@@ -14,7 +14,7 @@ import { useTheme } from "@mui/material";
 import { Opacity } from "@material-ui/icons";
 export const Categories = () => {
   const isChecked = useSelector((state) => state.result.buttonChecker);
-  const [disable, setDisable] = useState(false);
+  const [disable, setDisable] = useState();
 
   const Checker = () => {
     try {
