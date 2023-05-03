@@ -62,6 +62,7 @@ export const Main2 = () => {
                   minHeight: "100vh",
                   height: "110%",
                   p: 5,
+
                   // ml: "5%",
                 }
           }
@@ -78,6 +79,7 @@ export const Main2 = () => {
             pr={isNonMobileScreen ? 4 : "auto"}
             pl={isNonMobileScreen ? 4 : "auto"}
             fontSize={isNonMobileScreen ? "30px" : "40px"}
+            marginTop={isNonMobileScreen ? "40px" : "0"}
           >
             Welcome To Export Readiness Assessment Test
           </Typography>

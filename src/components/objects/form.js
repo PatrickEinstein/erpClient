@@ -110,13 +110,13 @@ export const Forms = () => {
                   size="small"
                   fullWidth
                   value={phone}
-                  maxLength={11}
+                  maxLength={15}
                   sx={{
                     backgroundColor: "white",
                   }}
                   onChange={(e) => {
                     const value = e.target.value;
-                    if (value.length <= 10) {
+                    if (value.length <= 15) {
                       setPhone(value);
                     }
                   }}
