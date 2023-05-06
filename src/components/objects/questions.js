@@ -2,7 +2,7 @@ export  const allQuestions = [{
     "Q1": "How committed is the business owner or management to exportation?",
     "Q2": "How realistic is the desire of the business owner or management to sell in foreign markets?",
     "Q3": "How experienced and familiar is the business owner or management with international business?",
-    "Q4": "Has the business owner or management any skills to manage export transactions?",
+    "Q4": "Does the business owners or management team have the necessary skills to manage export transactions?",
     "Q5": "How willing and ready is the business owner or management to fund export transactions?"
 },
 {
@@ -50,7 +50,7 @@ export  const allQuestions = [{
 {
     "Q1": "How would you evaluate the goodwill and reputation of the business both locally and abroad?",
     "Q2": "How would you evaluate the share of the company’s products in the domestic market?",
-    "Q3": "How would you evaluate the level of unsolicited orders receive by the business from buyers abroad?",
+    "Q3": "How would you evaluate the level of unsolicited orders received by the business from buyers abroad?",
     "Q4": "How would you evaluate the level of direct or indirect foreign affiliates in the company’s network?",
     "Q5": "How would you evaluate the level of demands for the company’s products in the local market?"
 },

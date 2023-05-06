@@ -152,8 +152,9 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             sx={{
               fontSize: "15px",
               fontWeight: "bold",
+              color: "blue",
+              marginBottom: 3,
             }}
-            color={theme.palette.primary.main}
           >
             {Q1}
           </Typography>{" "}
@@ -170,18 +171,29 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             value={value1}
             onChange={handleChange1}
           >
-            <FormControlLabel
-              value={5}
-              control={<Radio />}
-              label="Very high"
-              sx={{
-                fontSize: 5,
-              }}
-            />
-            <FormControlLabel value={4} control={<Radio />} label="High" />
-            <FormControlLabel value={3} control={<Radio />} label="Average" />
-            <FormControlLabel value={2} control={<Radio />} label="Low" />
-            <FormControlLabel value={1} control={<Radio />} label="Very Low" />
+            <Stack
+              spacing={3}
+              alignItems="flex-start"
+              justifyContent="flex-start"
+            >
+              <FormControlLabel
+                value={5}
+                control={<Radio />}
+                label="Very high"
+                sx={{
+                  fontSize: 5,
+                  marginLeft:0
+                }}
+              />
+              <FormControlLabel value={4} control={<Radio />} label="High" />
+              <FormControlLabel value={3} control={<Radio />} label="Average" />
+              <FormControlLabel value={2} control={<Radio />} label="Low" />
+              <FormControlLabel
+                value={1}
+                control={<Radio />}
+                label="Very Low"
+              />
+            </Stack>
           </RadioGroup>
         </FormControl>
         <Divider />
@@ -193,8 +205,9 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             sx={{
               fontSize: "15px",
               fontWeight: "bold",
+              color: "blue",
+              marginBottom: 3,
             }}
-            color={theme.palette.primary.main}
           >
             {Q2}
           </Typography>
@@ -203,6 +216,7 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
         <FormControl
           sx={{
             marginBottom: 10,
+            alignItems: "center",
           }}
         >
           <RadioGroup
@@ -211,11 +225,22 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             value={value2}
             onChange={handleChange2}
           >
-            <FormControlLabel value={5} control={<Radio />} label="Very high" />
-            <FormControlLabel value={4} control={<Radio />} label="High" />
-            <FormControlLabel value={3} control={<Radio />} label="Average" />
-            <FormControlLabel value={2} control={<Radio />} label="Low" />
-            <FormControlLabel value={1} control={<Radio />} label="Very Low" />
+            <Stack spacing={3}>
+              <FormControlLabel
+                value={5}
+                control={<Radio />}
+                label="Very high"
+                sx={{ marginLeft: 0 }}
+              />
+              <FormControlLabel value={4} control={<Radio />} label="High" />
+              <FormControlLabel value={3} control={<Radio />} label="Average" />
+              <FormControlLabel value={2} control={<Radio />} label="Low" />
+              <FormControlLabel
+                value={1}
+                control={<Radio />}
+                label="Very Low"
+              />
+            </Stack>
           </RadioGroup>
         </FormControl>
         <Divider />
@@ -226,8 +251,9 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             sx={{
               fontSize: "15px",
               fontWeight: "bold",
+              color: "blue",
+              marginBottom: 3,
             }}
-            color={theme.palette.primary.main}
           >
             {Q3}
           </Typography>
@@ -243,11 +269,22 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             value={value3}
             onChange={handleChange3}
           >
-            <FormControlLabel value={5} control={<Radio />} label="Very high" />
-            <FormControlLabel value={4} control={<Radio />} label="High" />
-            <FormControlLabel value={3} control={<Radio />} label="Average" />
-            <FormControlLabel value={2} control={<Radio />} label="Low" />
-            <FormControlLabel value={1} control={<Radio />} label="Very Low" />
+            <Stack spacing={3}>
+              <FormControlLabel
+                value={5}
+                control={<Radio />}
+                label="Very high"
+                sx={{ marginLeft: 0 }}
+              />
+              <FormControlLabel value={4} control={<Radio />} label="High" />
+              <FormControlLabel value={3} control={<Radio />} label="Average" />
+              <FormControlLabel value={2} control={<Radio />} label="Low" />
+              <FormControlLabel
+                value={1}
+                control={<Radio />}
+                label="Very Low"
+              />
+            </Stack>
           </RadioGroup>
         </FormControl>
         <Divider />
@@ -258,8 +295,9 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             sx={{
               fontSize: "15px",
               fontWeight: "bold",
+              color: "blue",
+              marginBottom: 3,
             }}
-            color={theme.palette.primary.main}
           >
             {" "}
             {Q4}
@@ -276,11 +314,22 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             value={value4}
             onChange={handleChange4}
           >
-            <FormControlLabel value={5} control={<Radio />} label="Very high" />
-            <FormControlLabel value={4} control={<Radio />} label="High" />
-            <FormControlLabel value={3} control={<Radio />} label="Average" />
-            <FormControlLabel value={2} control={<Radio />} label="Low" />
-            <FormControlLabel value={1} control={<Radio />} label="Very Low" />
+            <Stack spacing={3}>
+              <FormControlLabel
+                value={5}
+                control={<Radio />}
+                label="Very high"
+                sx={{ marginLeft: 0 }}
+              />
+              <FormControlLabel value={4} control={<Radio />} label="High" />
+              <FormControlLabel value={3} control={<Radio />} label="Average" />
+              <FormControlLabel value={2} control={<Radio />} label="Low" />
+              <FormControlLabel
+                value={1}
+                control={<Radio />}
+                label="Very Low"
+              />
+            </Stack>
           </RadioGroup>
         </FormControl>
         <Divider />
@@ -291,8 +340,9 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             sx={{
               fontSize: "15px",
               fontWeight: "bold",
+              color: "blue",
+              marginBottom: 3,
             }}
-            color={theme.palette.primary.main}
           >
             {Q5}
           </Typography>
@@ -304,11 +354,22 @@ export const Sections = ({ Q1, Q2, Q3, Q4, Q5, C }) => {
             value={value5}
             onChange={handleChange5}
           >
-            <FormControlLabel value={5} control={<Radio />} label="Very high" />
-            <FormControlLabel value={4} control={<Radio />} label="High" />
-            <FormControlLabel value={3} control={<Radio />} label="Average" />
-            <FormControlLabel value={2} control={<Radio />} label="Low" />
-            <FormControlLabel value={1} control={<Radio />} label="Very Low" />
+            <Stack spacing={3}>
+              <FormControlLabel
+                value={5}
+                control={<Radio />}
+                label="Very high"
+                sx={{ marginLeft: 0 }}
+              />
+              <FormControlLabel value={4} control={<Radio />} label="High" />
+              <FormControlLabel value={3} control={<Radio />} label="Average" />
+              <FormControlLabel value={2} control={<Radio />} label="Low" />
+              <FormControlLabel
+                value={1}
+                control={<Radio />}
+                label="Very Low"
+              />
+            </Stack>
           </RadioGroup>
         </FormControl>
         <Divider />

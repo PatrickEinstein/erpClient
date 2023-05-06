@@ -81,7 +81,7 @@ const columns = [
   // },
 ];
 
- function createData(name, code, population, size, density) {
+function createData(name, code, population, size, density) {
   // const density = population / size;
   return { name, code, population, size, density };
 }
@@ -151,12 +151,14 @@ export const Breakdown = () => {
   return (
     <Stack
       sx={
-        !isNonMobileScreen
+        isNonMobileScreen
           ? {
               margin: 10,
+              position: "relative",
             }
           : {
               margin: 0,
+              position: "relative",
             }
       }
     >
@@ -164,7 +166,7 @@ export const Breakdown = () => {
         height={15}
         sx={{
           padding: 3,
-          height:"auto",
+          height: "auto",
           width: "auto",
         }}
       >
@@ -175,7 +177,7 @@ export const Breakdown = () => {
             fontSize: "25px",
             fontWeight: "bold",
             mb: "auto",
-           height:"auto"
+            height: "auto",
           }}
         >
           {" "}
@@ -188,21 +190,24 @@ export const Breakdown = () => {
             <TableHead>
               <TableRow>
                 <TableCell align="center" colSpan={1}>
-                  <Box
+                  {/* <Box
                     sx={{
                       width: 100,
                       height: 100,
+                      position: "absolute",
+                      top:"2%",
+                      left:"2%"
                     }}
                   >
                     <img
                       src={process.env.PUBLIC_URL + "/explogo.jpeg"}
                       style={{
-                        width: 80,
-                        height: 80,
+                        width: 150,
+                        height: 150,
                         backgroundColor: "white",
                       }}
                     />
-                  </Box>
+                  </Box> */}
                 </TableCell>
                 <TableCell align="left" colSpan={2}>
                   {/* <Typography
@@ -214,27 +219,62 @@ export const Breakdown = () => {
                   </Typography> */}
                 </TableCell>
                 <TableCell align="left" colSpan={3}>
-                  <Stack>
-                    <Typography>
-                      <span style={{ fontWeight: "bold" }}> Name :</span>{" "}
-                      {userInfo.firstName} {userInfo.lastName}
-                    </Typography>
-                    <Typography>
-                      <span style={{ fontWeight: "bold" }}> Company :</span>{" "}
-                      {userInfo.companyName}
-                    </Typography>
-                    <Typography>
-                      <span style={{ fontWeight: "bold" }}> Products : </span>{" "}
-                      {userInfo.Products}
-                    </Typography>
-                    <Typography>
-                      <span style={{ fontWeight: "bold" }}>Email :</span>{" "}
-                      {userInfo.email}
-                    </Typography>
-                    <Typography>
-                      <span style={{ fontWeight: "bold" }}> Phone : </span>
-                      {userInfo.phone}
-                    </Typography>
+                  <Stack
+                    direction="row"
+                    sx={{
+                      position: "relative",
+                    }}
+                  >
+                    <Box
+                      sx={
+                        isNonMobileScreen
+                          ? {
+                              width: 100,
+                              height: 100,
+                              position: "absolute",
+                              left: "-150%",
+                              top: -20,
+                            }
+                          : {
+                              width: 100,
+                              height: 100,
+                              position: "absolute",
+                              top: 0,
+                              left: "-180%",
+                            }
+                      }
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/explogo.jpeg"}
+                        style={{
+                          width: 150,
+                          height: 150,
+                          backgroundColor: "white",
+                        }}
+                      />
+                    </Box>
+                    <Stack>
+                      <Typography>
+                        <span style={{ fontWeight: "bold" }}> Name :</span>{" "}
+                        {userInfo.firstName} {userInfo.lastName}
+                      </Typography>
+                      <Typography>
+                        <span style={{ fontWeight: "bold" }}> Company :</span>{" "}
+                        {userInfo.companyName}
+                      </Typography>
+                      <Typography>
+                        <span style={{ fontWeight: "bold" }}> Products : </span>{" "}
+                        {userInfo.Products}
+                      </Typography>
+                      <Typography>
+                        <span style={{ fontWeight: "bold" }}>Email :</span>{" "}
+                        {userInfo.email}
+                      </Typography>
+                      <Typography>
+                        <span style={{ fontWeight: "bold" }}> Phone : </span>
+                        {userInfo.phone}
+                      </Typography>
+                    </Stack>
                   </Stack>
                 </TableCell>
               </TableRow>

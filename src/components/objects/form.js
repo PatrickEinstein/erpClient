@@ -73,7 +73,7 @@ export const Forms = () => {
             }}>
               <Box gridColumn="span 10">
                 <TextField
-                  label="Firstname"
+                  label="First name"
                   id="outlined-size-small"
                   size="small"
                   type="text"
@@ -89,7 +89,7 @@ export const Forms = () => {
               <Box gridColumn="span 10">
                 <TextField
                   required
-                  label="Lastname"
+                  label="Last name"
                   type="text"
                   id="outlined-size-small"
                   size="small"
