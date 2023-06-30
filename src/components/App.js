@@ -8,8 +8,6 @@ import { Categories } from "./objects/questionSet";
 import { Success } from "./pages/success";
 import { Main2 } from "./pages/Main2";
 import { Breakdown } from "./pages/breakdown";
-import { Recommends1 } from "./recommendations/recommendation";
-import { Dashboard } from "../Admin/index";
 import ProfilePage from "../Admin/components/Profilepage";
 import {GoToAdmin }from "./AdminLink/adminlink";
 //import Dashboard from "../Admin/index"
