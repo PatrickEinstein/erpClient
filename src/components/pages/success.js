@@ -81,14 +81,18 @@ export const Success = () => {
     setDisabled(true);
 
     try {
-      const savedUserResponse = await fetch("create-pdf", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-
-        body: JSON.stringify({
-          data: isresult,
-        }),
-      }).then((res) => console.log(res));
+      const savedUserResponse = await fetch(
+        "https://erp-server-eight.vercel.app/create-pdf",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            data: isresult,
+          }),
+        }
+      );
+      const response = await savedUserResponse.json();
+      console.log(response);
     } catch (error) {
       console.log(error);
     }
