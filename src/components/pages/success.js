@@ -91,6 +91,7 @@ export const Success = () => {
           }),
         }
       );
+      
       const response = await savedUserResponse.json();
       console.log(response);
     } catch (error) {
